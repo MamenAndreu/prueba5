@@ -1,0 +1,158 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>¡Deja de regalarle tu dinero a las eléctricas!</title>
+    <style>
+        body {
+            font-family: 'Arial', sans-serif;
+            margin: 0;
+            padding: 0;
+            background: linear-gradient(to bottom, #ffe6e6, #ffffff);
+            color: #333;
+            line-height: 1.8;
+        }
+        header {
+            background-color: #ff4d4d;
+            color: white;
+            padding: 30px 20px;
+            text-align: center;
+            box-shadow: 0 2px 5px rgba(0, 0, 0, 0.2);
+        }
+        header h1 {
+            font-size: 3em;
+            margin: 0;
+            line-height: 1.2;
+        }
+        header p {
+            font-size: 1.2em;
+            margin-top: 10px;
+        }
+        section {
+            max-width: 900px;
+            margin: 30px auto;
+            padding: 30px;
+            background: white;
+            border-radius: 10px;
+            box-shadow: 0 4px 10px rgba(0, 0, 0, 0.2);
+            text-align: center;
+        }
+        h2 {
+            color: #ff4d4d;
+            font-size: 2em;
+            margin-bottom: 20px;
+        }
+        ul {
+            list-style: none;
+            padding: 0;
+            text-align: left;
+        }
+        ul li {
+            margin: 15px 0;
+            padding-left: 35px;
+            position: relative;
+            font-size: 1.2em;
+        }
+        ul li:before {
+            content: "\2714";
+            color: #ff4d4d;
+            position: absolute;
+            left: 0;
+            font-size: 1.5em;
+        }
+        .highlight {
+            font-weight: bold;
+        }
+        form {
+            margin-top: 30px;
+            display: flex;
+            flex-direction: column;
+            gap: 20px;
+        }
+        input, button {
+            padding: 15px;
+            font-size: 1em;
+            border: 1px solid #ddd;
+            border-radius: 5px;
+            width: 100%;
+        }
+        button {
+            background-color: #ff4d4d;
+            color: white;
+            border: none;
+            cursor: pointer;
+            font-size: 1.3em;
+            font-weight: bold;
+            transition: background-color 0.3s ease, transform 0.2s;
+        }
+        button:hover {
+            background-color: #cc0000;
+            transform: scale(1.05);
+        }
+        .social-proof {
+            margin-top: 30px;
+            font-size: 1em;
+            color: #666;
+        }
+        footer {
+            text-align: center;
+            margin-top: 20px;
+            padding: 10px 0;
+            background: #f1f1f1;
+            color: #333;
+        }
+        .urgent {
+            color: #ff4d4d;
+            font-weight: bold;
+        }
+        .image-section img {
+            max-width: 100%;
+            height: auto;
+            border-radius: 10px;
+            margin: 20px 0;
+            box-shadow: 0 4px 10px rgba(0, 0, 0, 0.2);
+        }
+    </style>
+</head>
+<body>
+    <header>
+        <h1>¡Deja de regalarle tu dinero a las eléctricas!</h1>
+        <p>¿Cuánto más estás dispuesto a perder? Te están <span class="urgent">robando</span> sin que te des cuenta.</p>
+    </header>
+
+    <section>
+        <h2>¡Basta ya! Vamos a arreglarlo juntos.</h2>
+        <p>Si estás aquí, es porque sabes que te están timando con tu factura de la luz. ¡Es hora de decir <span class="highlight">basta!</span></p>
+
+        <div class="image-section">
+            <img src="https://www.example.com/tu-dinero-te-lo-roban.jpg" alt="Un hombre frustrado mirando una factura elevada con signos de robo en el fondo." />
+        </div>
+
+        <ul>
+            <li><span class="highlight">Análisis gratuito</span> para descubrir cuánto estás perdiendo cada mes.</li>
+            <li>No más papeleos ni dolores de cabeza. Lo hacemos todo <span class="highlight">por ti.</span></li>
+            <li>Empieza a ahorrar en tu próxima factura. Así de <span class="highlight">rápido</span>.</li>
+        </ul>
+
+        <p>¿Sabes lo que más me indigna? Que mientras tú luchas por llegar a fin de mes, ellos se están llenando los bolsillos <span class="highlight">con tu dinero.</span></p>
+
+        <p>Solo necesitas darme una cosa: <span class="highlight">tu última factura.</span> Yo me encargo del resto. Sin complicaciones, sin compromiso. Solo resultados.</p>
+
+        <form action="/submit" method="POST" enctype="multipart/form-data">
+            <input type="text" name="name" placeholder="Tu nombre" required>
+            <input type="email" name="email" placeholder="Tu email" required>
+            <input type="file" name="factura" accept=".pdf,.jpg,.png">
+            <button type="submit">¡Sí, quiero dejar de regalar mi dinero!</button>
+        </form>
+
+        <div class="social-proof">
+            <p><span class="highlight">Más de 1.200 hogares</span> ya han conseguido ahorrar hasta <span class="highlight">600 € al año.</span><br> ¿Por qué no ser el próximo?</p>
+        </div>
+    </section>
+
+    <footer>
+        <p>&copy; 2024 Ahorra Energía. Todos los derechos reservados.</p>
+    </footer>
+</body>
+</html>
